@@ -49,22 +49,35 @@ const navItems = document.querySelectorAll('a');
 
 const navItems1 = navItems[0];
 navItems1.textContent = siteContent.nav['nav-item-1'];
+navItems1.style.color = 'green';
 
 const navItems2 = navItems[1];
 navItems2.textContent = siteContent.nav['nav-item-2'];
+navItems2.style.color = 'green';
 
 const navItems3 = navItems[2];
 navItems3.textContent = siteContent.nav['nav-item-3'];
+navItems3.style.color = 'green';
 
 const navItems4 = navItems[3];
 navItems4.textContent = siteContent.nav['nav-item-4'];
+navItems4.style.color = 'green';
 
 const navItems5 = navItems[4];
 navItems5.textContent = siteContent.nav['nav-item-5'];
+navItems5.style.color = 'green';
 
 const navItems6 = navItems[5];
 navItems6.textContent = siteContent.nav['nav-item-6'];
+navItems6.style.color = 'green';
 
+const newNav = document.querySelector('nav');
+const newItem1 = document.createElement('a');
+const newItem2 = document.createElement('a');
+newItem1.textContent = "New Item 1";
+newItem2.textContent = "New Item 2";
+newNav.prepend(newItem1);
+newNav.appendChild(newItem2);
 
 
 //Fixing the CTA Items//
@@ -125,8 +138,28 @@ const mainImage = document.getElementById('middle-img');
 mainImage.setAttribute('src', siteContent['main-content']['middle-img-src']);
 
 
+//Fixing Footer Header//
+
+const footerHeader = mainContentHeaders[5];
+footerHeader.textContent = siteContent.contact["contact-h4"];
 
 
+//Fixing Footer Paragraphs//
+
+const footerPara1 = mainContentParagraphs[5];
+footerPara1.textContent = siteContent.contact.address;
+
+const footerPara2 = mainContentParagraphs[6];
+footerPara2.textContent = siteContent.contact.phone;
+
+const footerPara3 = mainContentParagraphs[7];
+footerPara3.textContent = siteContent.contact.email;
+
+
+//Fixing Footer Copyright Statement//
+
+const copyrightStatement = mainContentParagraphs[8];
+copyrightStatement.textContent = siteContent.footer.copyright;
 
 
 // Example: Update the img src for the logo
