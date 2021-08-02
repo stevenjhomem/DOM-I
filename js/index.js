@@ -79,8 +79,50 @@ const ctaImage = document.getElementById('cta-img');
 ctaImage.setAttribute('src', siteContent.cta['img-src']);
 
 
+//Fixing Main Content Headers//
+
+const mainContentHeaders = document.querySelectorAll('h4');
+
+const mainContHead1 = mainContentHeaders[0];
+mainContHead1.textContent = siteContent["main-content"]["features-h4"];
+
+const mainContHead2 = mainContentHeaders[1];
+mainContHead2.textContent = siteContent["main-content"]["about-h4"];
+
+const mainContHead3 = mainContentHeaders[2];
+mainContHead3.textContent = siteContent["main-content"]["services-h4"];
+
+const mainContHead4 = mainContentHeaders[3];
+mainContHead4.textContent = siteContent["main-content"]["product-h4"];
+
+const mainContHead5 = mainContentHeaders[4];
+mainContHead5.textContent = siteContent["main-content"]["vision-h4"];
 
 
+//Fixing Main Content Paragraphs//
+
+const mainContentParagraphs = document.querySelectorAll('p');
+
+const mainContPara1 = mainContentParagraphs[0];
+mainContPara1.textContent = siteContent["main-content"]["features-content"];
+
+const mainContPara2 = mainContentParagraphs[1];
+mainContPara2.textContent = siteContent["main-content"]["about-content"];
+
+const mainContPara3 = mainContentParagraphs[2];
+mainContPara3.textContent = siteContent["main-content"]["services-content"];
+
+const mainContPara4 = mainContentParagraphs[3];
+mainContPara4.textContent = siteContent["main-content"]["product-content"];
+
+const mainContPara5 = mainContentParagraphs[4];
+mainContPara5.textContent = siteContent["main-content"]["vision-content"];
+
+
+//Fixing Main Content Image//
+
+const mainImage = document.getElementById('middle-img');
+mainImage.setAttribute('src', siteContent['main-content']['middle-img-src']);
 
 
 
@@ -89,5 +131,5 @@ ctaImage.setAttribute('src', siteContent.cta['img-src']);
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
