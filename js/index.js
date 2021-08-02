@@ -67,6 +67,19 @@ navItems6.textContent = siteContent.nav['nav-item-6'];
 
 
 
+//Fixing the CTA Items//
+
+const ctaText = document.querySelector('h1');
+ctaText.textContent = siteContent.cta['h1'];
+
+const ctaButton = document.querySelector('button');
+ctaButton.textContent = siteContent.cta['button'];
+
+const ctaImage = document.getElementById('cta-img');
+ctaImage.setAttribute('src', siteContent.cta['img-src']);
+
+
+
 
 
 
