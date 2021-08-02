@@ -1,3 +1,9 @@
+//Making sure that the tab title matches//
+
+const tabTitle = document.querySelector('Title');
+
+tabTitle.textContent='Great Idea!';
+
 const siteContent = {
   "nav": {
     "nav-item-1": "Services",
@@ -37,6 +43,38 @@ const siteContent = {
   },
 };
 
+//Fixing the Navigation Bar//
+
+const navItems = document.querySelectorAll('a');
+
+const navItems1 = navItems[0];
+navItems1.textContent = siteContent.nav['nav-item-1'];
+
+const navItems2 = navItems[1];
+navItems2.textContent = siteContent.nav['nav-item-2'];
+
+const navItems3 = navItems[2];
+navItems3.textContent = siteContent.nav['nav-item-3'];
+
+const navItems4 = navItems[3];
+navItems4.textContent = siteContent.nav['nav-item-4'];
+
+const navItems5 = navItems[4];
+navItems5.textContent = siteContent.nav['nav-item-5'];
+
+const navItems6 = navItems[5];
+navItems6.textContent = siteContent.nav['nav-item-6'];
+
+
+
+
+
+
+
+
+
+
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
